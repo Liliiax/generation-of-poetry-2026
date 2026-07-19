@@ -176,9 +176,9 @@ class CharTransformerLM(nn.Module):
 
 
 MODEL_REGISTRY = {
-    "LSTM": dict(ckpt="best_lstm.pt", cls=CharLSTMLM, has_state=True),
-    "Transformer": dict(ckpt="best_transformer.pt", cls=CharTransformerLM, has_state=False),
-    "Mamba": dict(ckpt="best_mamba.pt", cls=MambaLM, has_state=False),
+    "LSTM": dict(ckpt="saved-models/best_lstm.pt", cls=CharLSTMLM, has_state=True),
+    "Transformer": dict(ckpt="saved-models/best_transformer.pt", cls=CharTransformerLM, has_state=False),
+    "Mamba": dict(ckpt="saved-models/best_mamba.pt", cls=MambaLM, has_state=False),
 }
 
 def load_models():
